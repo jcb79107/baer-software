@@ -1,15 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const title = "Baer Software — Independent software by Jason Baer";
+const title = "Baer Software";
 const description =
-  "Small, focused software for work and life. Explore Linear Pointing, a refinement and estimation app for Linear teams, and see what Jason Baer is building next.";
+  "Independent software. Linear Pointing for issue estimation, and Golf Commissioner for season-long leagues and tournaments.";
 
 export const metadata: Metadata = {
   title,
   description,
   applicationName: "Baer Software",
-  authors: [{ name: "Jason Baer", url: "https://github.com/jcb79107" }],
   openGraph: {
     title,
     description,

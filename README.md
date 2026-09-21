@@ -1,6 +1,6 @@
 # Baer Software
 
-The studio and portfolio website for **Baer Software**, Jason Baer’s independent, one-person software studio. Small, focused software for work and life.
+The website for **Baer Software**, an independent software studio. A short product listing with availability and links.
 
 One static homepage built with Next.js App Router, TypeScript, and Tailwind CSS. No database, authentication, CMS, or backend services. System fonts keep the site fast and builds independent of font services.
 
