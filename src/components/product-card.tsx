@@ -13,12 +13,12 @@ export function ProductCard({ product }: { product: Product }) {
           <h2 id={`${product.id}-title`} className="product-name">
             {product.name}
           </h2>
-          <p className={`mt-3 text-sm ${available ? "text-ink" : "text-muted"}`}>
+          <p className="product-status mt-4">
             {available ? "Available now" : "In development"}
           </p>
         </div>
         <div>
-          <p className="leading-[1.75] text-muted">{product.description}</p>
+          <p className="product-description">{product.description}</p>
           {product.status === "available" && (
             <div className="mt-6 flex flex-wrap items-center gap-x-7 gap-y-4">
               <a className="button" href={product.url}>

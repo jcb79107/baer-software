@@ -1,11 +1,10 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-paper: #f8f9f6;
-  --color-ink: #262c29;
-  --color-muted: #626963;
-  --color-line: #d9ded6;
-  --color-accent: #a0462d;
+  --color-paper: #f7f6f2;
+  --color-ink: #1b2a50;
+  --color-accent: #2943c9;
+  --color-peach: #f6b99c;
   --font-sans: Arial, Helvetica, sans-serif;
 }
 
@@ -22,8 +21,8 @@ body {
 }
 
 ::selection {
-  background: #e2e9dc;
-  color: #262c29;
+  background: #ffdf87;
+  color: #1b2a50;
 }
 
 a {
@@ -48,13 +47,19 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 3.5rem;
 }
 
 .wordmark {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+  font-weight: 750;
+  letter-spacing: -0.065em;
+  line-height: 1.1;
+  color: var(--color-accent);
+}
+
+.wordmark-dot {
+  color: #bd4b22;
 }
 
 .text-link {
@@ -70,23 +75,77 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.header-link {
+  padding: 0.5rem 1rem;
+  border: 1px solid #bfc5d4;
+  border-radius: 999px;
+}
+
+.header-link:hover {
+  background: #e9edff;
+  border-color: var(--color-accent);
+}
+
 .product-card {
   min-width: 0;
-  padding: 2rem;
-  border: 1px solid var(--color-line);
-  border-radius: 8px;
+  padding: 2.5rem;
+  border: 1px solid #d89b7f;
+  border-radius: 16px;
+  background: var(--color-peach);
+  box-shadow: 0 4px 0 #d89b7f;
   overflow-wrap: anywhere;
 }
 
 .product-card-available {
-  background: #eef1eb;
+  background: var(--color-accent);
+  border-color: #2037ad;
+  color: #ffffff;
+  box-shadow: 0 4px 0 #172b91;
 }
 
 .product-name {
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: -0.04em;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.05em;
   line-height: 1.2;
+}
+
+.product-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid #b47e66;
+  border-radius: 5px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.product-card-available .product-status {
+  border-color: #7789e5;
+}
+
+.product-card-available .product-status::before {
+  content: "";
+  flex: 0 0 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-peach);
+}
+
+.product-description {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.product-card-available .product-description {
+  color: #e6eaff;
+}
+
+.product-card-available a:focus-visible {
+  outline-color: var(--color-peach);
 }
 
 .button {
@@ -96,16 +155,16 @@ a:focus-visible {
   gap: min(1.25rem, 4vw);
   max-width: 100%;
   min-height: 3rem;
-  padding: 0.75rem 1rem;
-  border-radius: 5px;
-  background: var(--color-ink);
-  color: #fff;
+  padding: 0.75rem 1.125rem;
+  border-radius: 7px;
+  background: var(--color-paper);
+  color: #2138b0;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .button:hover {
-  background: #435247;
+  background: var(--color-peach);
 }
 
 .skip-link {
@@ -134,12 +193,12 @@ a:focus-visible {
     padding-bottom: 2rem;
   }
 
-  .wordmark {
-    font-size: 1.75rem;
-  }
-
   .product-card {
     padding: min(1.5rem, 6vw);
+  }
+
+  .product-name {
+    font-size: 1.75rem;
   }
 }
 
