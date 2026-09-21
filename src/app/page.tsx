@@ -7,7 +7,6 @@ export default function Home() {
       <header className="site-header">
         <div>
           <h1 className="wordmark">Baer Software</h1>
-          <p className="mt-3 text-muted">Independent software.</p>
         </div>
         <a className="text-link" href="https://github.com/jcb79107">
           GitHub <span aria-hidden="true">↗</span>
