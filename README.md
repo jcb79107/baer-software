@@ -51,16 +51,16 @@ To add a product, append an entry to `src/data/products.ts`. Available products 
 
 ## Deployment
 
-Deploy as a new Vercel project named `baer-software` using the Next.js preset. Vercel serves the static export; no runtime services or custom domain are needed.
+Live site: **[baer-software.vercel.app](https://baer-software.vercel.app)**.
 
-The Vercel CLI’s saved login required renewal during initial setup, so deployment was not performed. From this directory, run:
+Vercel project: `baer-software` in `jcb79107s-projects`. The GitHub repository is connected; pushes to `main` deploy to production automatically. `vercel.json` explicitly selects the Next.js preset. Vercel serves the static export without runtime services or a custom domain.
+
+For a manual deployment from this directory:
 
 ```sh
 npx vercel@latest login
-npx vercel@latest link
+npx vercel@latest link --project baer-software --scope jcb79107s-projects
 npx vercel@latest --prod
 ```
 
-Select your personal Vercel scope and create a **new** project named `baer-software` when prompted. Accept the detected Next.js settings. Do not link to an existing product project. Alternatively, import `jcb79107/baer-software` in the Vercel dashboard to connect GitHub and enable deployments from `main`.
-
-The public site uses only relative internal links and does not assume a custom domain. Add a canonical URL to the metadata once the permanent production address is known.
+The production address is set in `src/app/layout.tsx` for canonical and Open Graph URLs. Update it if the site moves to a custom domain.

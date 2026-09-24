@@ -6,10 +6,13 @@ const description =
   "Independent software. Linear Pointing for issue estimation, and Golf Commissioner for season-long leagues and tournaments.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://baer-software.vercel.app"),
   title,
   description,
   applicationName: "Baer Software",
+  alternates: { canonical: "/" },
   openGraph: {
+    url: "/",
     title,
     description,
     siteName: "Baer Software",
