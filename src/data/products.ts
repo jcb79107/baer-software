@@ -36,6 +36,7 @@ export const products: Product[] = [
       "The home of The Two Man golf tournament. Follow match results, team standings, and the playoff bracket throughout the competition.",
     url: "https://www.thetwoman.site",
     cta: "Visit The Two Man",
+    githubUrl: "https://github.com/jcb79107/the-two-man",
   },
   {
     id: "golf-commissioner",
