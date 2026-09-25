@@ -29,6 +29,15 @@ export const products: Product[] = [
     githubUrl: "https://github.com/jcb79107/linear-pointing",
   },
   {
+    id: "the-two-man",
+    name: "The Two Man",
+    status: "available",
+    description:
+      "The home of The Two Man golf tournament. Follow match results, team standings, and the playoff bracket throughout the competition.",
+    url: "https://www.thetwoman.site",
+    cta: "Visit The Two Man",
+  },
+  {
     id: "golf-commissioner",
     name: "Golf Commissioner",
     status: "in-development",

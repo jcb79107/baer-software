@@ -7,6 +7,7 @@ One static homepage built with Next.js App Router, TypeScript, and Tailwind CSS.
 ## Products
 
 - **[Linear Pointing](https://public-linear-pointing.vercel.app)** — available now. Refinement and private estimation for Linear teams, with decisions, estimates, and notes written back to Linear. [Source](https://github.com/jcb79107/linear-pointing).
+- **[The Two Man](https://www.thetwoman.site)** — available now. The golf tournament website, with match results, team standings, and the playoff bracket.
 - **Golf Commissioner** — in development. Tools for custom, season-long golf leagues and tournaments, informed by building The Two Man. The existing tournament app is not offered here as a commercial product.
 
 ## Local development
