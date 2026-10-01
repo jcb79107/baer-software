@@ -19,14 +19,14 @@ export type Product = ProductBase &
 
 export const products: Product[] = [
   {
-    id: "linear-pointing",
-    name: "Linear Pointing",
+    id: "pointed",
+    name: "Pointed",
     status: "available",
     description:
-      "Planning poker for Linear teams. Prepare an issue agenda, estimate privately, and save estimates and refinement notes back to Linear.",
+      "Planning poker for Linear teams, in public beta. Prepare an issue agenda, estimate privately, and save final estimates back to Linear.",
     url: "https://public-linear-pointing.vercel.app",
-    cta: "Try Linear Pointing",
-    githubUrl: "https://github.com/jcb79107/linear-pointing",
+    cta: "Try Pointed",
+    githubUrl: "https://github.com/jcb79107/pointed",
   },
   {
     id: "the-two-man",
