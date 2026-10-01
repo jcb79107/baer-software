@@ -3,7 +3,7 @@ import "./globals.css";
 
 const title = "Baer Software";
 const description =
-  "Independent software. Linear Pointing for issue estimation, and Golf Commissioner for season-long leagues and tournaments.";
+  "Independent software. Pointed for Linear planning poker, The Two Man for golf tournaments, and Golf Commissioner in development.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://baer-software.vercel.app"),
